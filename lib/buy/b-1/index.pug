@@ -1,0 +1,130 @@
+section.canhcam-buy-list-1
+	article.buy-list
+		.container
+			.row
+				.col-lg-3.buy-left
+					.buy-select
+						.buy-nav
+							nav
+								ul.nav(role="tablist")
+									li.nav-item
+										a.nav-link.active(href="#tab-1" data-toggle="tab") Mua
+									li.nav-item
+										a.nav-link(href="#tab-2" data-toggle="tab") Thuê
+						.buy-input.tab-content
+							.tab-pane.fade.show.active#tab-1
+								.form-group
+									input(type="text" placeholder="Vui lòng nhập tên dự án / địa chỉ")
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group.mb-0
+									button.btn(type="submit")
+										| Tìm kiếm
+										i.fa.fa-search
+							.tab-pane.fade#tab-2
+								.form-group
+									input(type="text" placeholder="Vui lòng nhập tên dự án / địa chỉ")
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+								.form-group.mb-0
+									button.btn(type="submit")
+										| Tìm kiếm
+										i.fa.fa-search
+					.buy-banner
+						.row
+							.col-6.col-lg-12
+								figure
+									img.w-100(src="./img/cbre/buy/buy_banner_1.png", alt="alt")
+							.col-6.col-lg-12
+								figure
+									img.w-100(src="./img/cbre/buy/buy_banner_2.png", alt="alt")
+				.col-lg-9.buy-right
+					.row
+						.col-12
+							.buy-input
+								label Sắp xếp theo
+								.form-group
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+									.select
+										select
+											option(value='item1') item1
+											option(value='item2') item2
+											option(value='item3') item3
+							.list-items.w-100
+								.row.no-gutters
+									- for(x=1; x < 11 ; x++)
+										.col-sm-6.col-lg-4.item
+											a(href="./buy-details.html")
+												figure
+													.box-zoom
+														img.w-100(src='./img/cbre/home/home_2.png')
+														.detail.d-none Xem chi tiết
+													figcaption
+														h5.name De La Sol
+														p.address Quận 2, TP. HCM
+														ul.nav.info
+															li.nav-item Căn hộ
+															li.nav-item 100m
+																sup 2
+														p.mb-0 Đã hoàn thành/Cho thuê
+													.price Từ 1.5 tỷ VNĐ / căn

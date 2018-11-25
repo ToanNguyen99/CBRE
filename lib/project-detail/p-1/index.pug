@@ -1,0 +1,18 @@
+section.canhcam-nav-1
+	.container
+		.row
+			.col-lg-4.title
+				h5 sunwah pearl
+				p.mb-0 Bình Thạnh, Tp Hồ Chí Minh
+			.col-lg-8
+				.nav-right.d-none.d-lg-block
+					ul.nav
+						- var index = 1
+							each val , key in ['Hình ảnh','Thông tin chung','Chi tiết dự án','Tiện ích','Chủ đầu tư','Vị trí dự án','Bảng tính','Các dự án đang bán']
+								li.nav-item
+									a(href="#").nav-link
+										figure
+											.boxzoom
+												img(src="./img/cbre/project_detail/detail_icon_"+ index++ +".png", alt="alt")
+											figcaption
+												h4= val

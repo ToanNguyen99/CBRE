@@ -1,0 +1,36 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-why-1
+	+pad(3rem null 1rem)
+	.list
+		margin-top: 2rem
+		.item
+			margin-bottom: 2.5rem
+			
+			figure
+				margin-bottom: 0
+				text-align: center
+				+pad(null 1rem)
+				.icon
+					min-height: r(70px)
+					+lh(r(70px))
+					img
+						max-height: r(70px)
+				figcaption
+					margin-top: r(18px)
+					.title
+						+fz(r(16px))
+						color: color-get($mau, text-1)
+						+fw(700)
+					p
+						margin-bottom: 0
+						+fz(r(14px))
+						color: color-get($mau, text-5)
+	+media-breakpoint-up(lg)
+		.list
+			.item
+				figure
+					+pad(null 3rem)

@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "buy-list"
+	- var description = "Description for buy page"
+	- var bodyclass = "buypage"
+	- var href = "/buy-list.html"
+block header
+	include ../lib/header/h-4/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/buy/b-1/index.pug
+
+block footer
+	include ../lib/footer/f-11/index.pug

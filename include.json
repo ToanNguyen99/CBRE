@@ -1,0 +1,105 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-4"
+            ],
+            "body": [
+                "slider/s-1",
+                "carousel/c-2",
+                "buy/b-1",
+                "buy/b-2",
+                "buy-detail/b-1",
+                "buy-detail/b-2",
+                "buy-detail/b-3",
+                "buy-detail/b-4",
+                "buy-detail/b-5",
+                "buy-detail/b-6",
+                "buy-detail/b-7",
+                "buy-detail/b-8",
+                "buy-detail/b-9"
+            ],
+            "footer": [
+                "footer/f-11"
+            ]
+        },
+        "project-detail": {
+            "body": [
+                "breadcrumb/b-1"
+            ],
+            "footer": [
+                "footer/f-11"
+            ]
+        },
+        "buy-detail": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "sell-list": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "rent-detail": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "rent-list": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "project-list": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "news-detail": {
+            "body": [
+                "breadcrumb/b-1",
+                "news-details/n-1"
+            ]
+        },
+        "news-list": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "register": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "login": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "search": {
+            "body": [
+                "breadcrumb/b-1"
+            ]
+        },
+        "add": {
+            "body": [
+                "home/h-1",
+                "home/h-2",
+                "home/h-3",
+                "project-detail/p-1",
+                "project-detail/p-2",
+                "project-list/p-1",
+                "pagination/p-1",
+                "news-list/n-1",
+                "login/l-1",
+                "register/r-1",
+                "contact/c-1",
+                "step/s-1",
+                "step/s-2",
+                "why/w-1",
+                "team/t-1"
+            ]
+        }
+    }
+}

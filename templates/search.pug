@@ -1,0 +1,13 @@
+extends _layout/layout.pug
+block variables
+	- var title = "search"
+	- var description = "Description for search page"
+	- var bodyclass = "search"
+	- var href = "/search.html"
+block header
+	include ../lib/header/h-4/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/search/s-1/index.pug
+block footer
+	include ../lib/footer/f-11/index.pug

@@ -1,0 +1,112 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.detail-9
+	+pad(2.5rem null 4rem)
+	.buy-title
+		align-items: flex-start
+		padding-bottom: 1rem
+	.content
+		background: color-get($mau,trang)
+		.item
+			color: color-get($mau,text-1)
+			+pad(1.5rem null)
+			border-bottom: 1px solid lighten(color-get($mau,text-2),30%)
+			.price
+				margin-bottom: .5rem
+				h5
+					+fz(1.3rem)
+					color: color-get($mau, text-1)
+					margin-bottom: 0
+					
+			span
+				color: color-get($mau,text-2)
+			.info
+				p
+					margin-bottom: 0
+			.room
+				display: flex
+				.room-info
+					+ .room-info
+						margin-left: 1rem
+			a
+				+pad(null)
+				display: block
+				margin-top: .5rem
+		.phone
+			+pos(abs, 0 1rem null null)
+			.btn-phone
+				background: color-get($mau,main)
+				color: color-get($mau,extra)
+				+bor-rad(50%)
+				position: relative
+				height: 45px
+				width: 45px
+				margin-top: 0
+				+pad(0)
+				text-align: center
+				em
+					+lh(45px)
+					+fz(2rem)
+					z-index: 1
+					position: relative
+				&:after
+					content: ''
+					width: 50%
+					height: 50%
+					+pos(abs, null -1px -1px null)
+					background: color-get($mau,main)
+	+media-breakpoint-up(lg)
+		background: #f7f7f7
+		.buy-title
+			align-items: flex-end
+		.title
+			background: color-get($mau,trang)
+			+pad(.75rem null)
+			margin-top: 2rem
+			margin-bottom: 0
+			max-width: 50%
+			text-align: center
+			border-top: 2px solid color-get($mau,extra)
+			+fz(1.1rem)
+		.content
+			+fz(1.1rem)
+			+pad(1.5rem)
+			padding-bottom: 3rem
+			.item
+				.price
+					padding-left: 1.5rem
+					margin-bottom: 0
+					h5
+						+fz(1rem)
+						+fw(700)
+				&:first-child
+					padding-top: 0
+				.img
+					flex: 0 0 40%
+			.list-info
+				align-items: center
+				height: 100%
+			.detail
+				padding-bottom: .75rem
+				color: color-get($mau,main)
+				+fw(700)
+				+fz(1.1rem)
+				border-bottom: 1px solid color-get($mau, extra)
+			.buyer
+				figure
+					display: flex
+					margin-bottom: 0
+					align-items: center
+					.people
+						border: 1px solid color-get($mau,main)
+						width: 70px
+						+bor-rad(50%)
+						height: 70px
+						overflow: hidden
+					figcaption
+						margin-left: 1rem
+						p
+							margin-bottom: .3rem
+							color: color-get($mau,main)

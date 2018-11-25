@@ -1,0 +1,90 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-form-1
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.form
+		+pad(2rem 2.5rem)
+		color: color-get($mau,text-3)
+		
+		position: relative
+		background: url('../img/cbre/form_bg.png')
+		+media-breakpoint-up(lg)
+			+pad(4rem 8rem)
+			+mar(null 5rem)
+		z-index: 0
+		&:after
+			content: ''
+			+pos(abs, 5px 5px 5px 5px)
+			background: color-get($mau,trang)
+			z-index: -1
+		
+		.other-login
+			z-index: 20
+			position: relative
+			text-align: center
+			.item
+				text-decoration: none
+				+mar(null auto)
+				+bor-rad(5px)
+				max-width: 350px
+				color: color-get($mau,trang)
+				display: flex
+				align-items: center
+				&.fb
+					background: #3b5998
+				&.gg
+					background: #df4a32
+				.icon
+					width: 50px
+					height: 40px
+					text-align: center
+					+lh(40px)
+					+fz(1.2rem)
+					border-right: 1px solid color-get($mau,trang)
+				.login
+					width: 100%
+					text-align: center
+				+ .item
+					margin-top: 1rem
+			
+		.form-login
+			.item
+				+ .item
+					margin-top: 1rem
+				.getpass
+					text-decoration: underline
+				.form-group
+					.form-control
+						background: color-get($mau,bg-5)
+						+pad(.75rem null)
+						+bor-rad(5px)
+						border: 1px solid lighten(color-get($mau,text-2),30%)
+				.form-checkbox
+					display: flex
+					align-items: center
+					a
+						color: color-get($mau,main)
+						text-decoration: underline
+					label
+						margin-bottom: 0
+						margin-left: .5rem
+				.button
+					text-align: center
+					button
+						background: color-get($mau,main)
+						+pad(.5rem)
+						color: color-get($mau,trang)
+						border: 0
+						width: 100%
+					p
+						margin-top: .8rem
+						a
+							color: color-get($mau,extra)
+							text-decoration: none
+					+media-breakpoint-up(lg)
+						max-width: 290px

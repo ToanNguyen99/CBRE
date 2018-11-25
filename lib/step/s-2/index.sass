@@ -1,0 +1,29 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-step-2
+	+pad(3rem null)
+	.text
+		+fz(1.1rem)
+		color: color-get($mau,text-5)
+		p
+			margin-bottom: 0
+	.btn-register
+		background: color-get($mau, main)
+		color: color-get($mau, trang)
+		text-transform: uppercase
+		+fw(400)
+		margin-top: 2rem
+		+bor-rad(0)
+		+pad(null 1.5rem)
+		&:after
+			margin-left: .8rem
+			content: '\f054'
+			font: normal normal normal 16px/1 "Material Design Icons"
+		&:hover
+			background: transparent
+			color: color-get($mau, main)
+			box-shadow: 0 0 0 1px color-get($mau, main) inset
+			transition: .3s ease-in-out all

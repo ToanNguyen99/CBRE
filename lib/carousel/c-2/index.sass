@@ -1,0 +1,152 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-carousel-2, .canhcam-home-1, .canhcam-home-2, .canhcam-search-1, .canhcam-buy-list-1
+	+pad(3rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0 3rem)
+	.list-items
+		position: relative
+		display: block!important
+		// Main
+		.owl-stage-outer
+		// Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					background: transparent
+					+fz(3.5rem)
+					width: 4rem
+					text-align: center
+					opacity: 1
+					+bor-rad(0)
+					margin: 0
+					+transform(translateY(-50%))
+					color: color-get($mau, arrow)
+					&.owl-prev
+						+pos(abs, 50% null null 0)
+					&.owl-next
+						+pos(abs, 50% 0 null null)
+					+media-breakpoint-up(xl)
+						&.owl-prev
+							left: -4rem
+						&.owl-next
+							right: -4rem
+					&:focus
+						outline: none
+					&:hover
+						background: color-get($mau,main)
+						color: color-get($mau,trang)
+					&.disabled
+						&:hover
+							opacity: .5
+						
+					
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						background: color-get($mau,main)
+		// List
+		.item
+			display: none
+			+ .item
+				margin-top: 2rem
+			a
+				color: darken(color-get($mau,trang),0%)
+				text-decoration: none
+				figure
+					figcaption
+						text-align: center
+						+pad(1rem)
+						background: url('../img/cbre/home/home_bg_2.png')
+						background-size: cover
+						background-position: center center
+						h3
+							+fz(1.2rem)
+							margin-bottom: 1rem
+							text-transform: uppercase
+							+fw(700)
+						.address
+							margin-bottom: .5rem
+							&:before
+								content: '\f34e'
+								color: color-get($mau,trang)
+								margin-right: 1rem
+								font: normal normal normal 24px/1 "Material Design Icons"
+								+fz(1rem)
+						.info
+							+fz(.9rem)
+							justify-content: center
+							margin-bottom: .5rem
+							.nav-item
+								+pad(null .5rem)
+								position: relative
+								+fz(1rem)
+								+ .nav-item
+									&:before
+										content: ''
+										height: 12px
+										width: 1px
+										+pos(abs, 50% null null 0)
+										transform: translateY(-50%)
+										background: color-get($mau,trang)
+						.price
+							background: color-get($mau, bg)
+							color: color-get($mau, text-4)
+							+pad(.5rem null)
+	.show
+		margin-top: 1.5rem
+		text-align: center
+		.btn-show
+			background: color-get($mau,main)
+			color: color-get($mau,trang)
+			+pad(.8rem 3rem)
+			+bor-rad(0)
+			+lh(1.5)
+			text-transform: uppercase
+			&.showless
+				display: none
+			&:after
+				content: '\f054'
+				margin-left: .5rem
+				font-size: 1.2rem!important
+				font: normal normal normal 24px/1 "Material Design Icons"
+			&:hover
+				color: color-get($mau,main)
+				background: transparent
+				box-shadow: 0 0 0 2px inset color-get($mau,main)
+	+media-breakpoint-up(sm)
+		.list-items
+			.item
+				a
+					figure
+						figcaption
+							+pad(2rem 3rem)
+							.address
+								margin-bottom: .3rem
+							.info
+								.nav-item
+									+pad(null .8rem)
+									position: relative
+									+fz(1rem)
+									+ .nav-item
+										&:before
+											content: ''
+											height: 12px
+											width: 1px
+											+pos(abs, 50% null null 0)
+											transform: translateY(-50%)
+											background: color-get($mau,trang)
+	+media-breakpoint-up(lg)
+		.list-items
+			.item
+				display: block

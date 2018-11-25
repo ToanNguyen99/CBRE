@@ -1,0 +1,116 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-3
+	+pad(3rem null)
+	background: color-get($mau,bg-3)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.item
+		
+		a
+			text-decoration: none
+			+pad(2rem null)
+			display: block
+			border-bottom: 1px solid lighten(color-get($mau,text-2), 30%)
+		&:first-child
+			a
+				padding-top: 0
+		.news
+			margin-top: 1.5rem
+		time
+			+fz(.9rem)
+			color: color-get($mau,text-2)
+			margin-bottom: .8rem
+			display: block
+		.title
+			+fw(700)
+			+fz(1.2rem)
+			color: color-get($mau,text-1)
+			overflow: hidden
+			
+		.content
+			+fz(.95rem)
+			color: color-get($mau,text-3)
+			overflow: hidden
+			margin-bottom: 0
+	.bottom-news
+		padding-top: 2.5rem
+		.item
+			&:first-child
+				a
+					padding-top: 0
+			a
+				padding-top: 2.5rem
+				.img
+					margin-right: 0!important
+				figure
+					margin-bottom: 0
+					figcaption
+						margin-top: 1.5rem
+	.sale
+		padding-top: 2.5rem
+		.row
+			+mar(null -5px)
+		.item
+			+pad(null 5px)
+			figure
+				margin: 0
+				position: relative
+				figcaption
+					color: color-get($mau,trang)
+					+pad(2rem)
+					width: 100%
+					+pos(abs, null null 0 0)
+					+fw(700)
+					h4
+						+fz(1.2rem)
+					h5
+						+fz(1rem)
+						margin-bottom: 0
+	+media-breakpoint-up(sm)
+		.item
+			.img
+				margin-right: 1rem
+			.news
+				margin: 0
+		.sale
+			.item
+				figure
+					position: relative
+					figcaption
+						+pad(2rem)
+						width: 100%
+						+pos(abs, null null 0 0)
+						+fw(700)
+						h4
+							+fz(1.7rem)
+						h5
+							+fz(1.4rem)
+	+media-breakpoint-up(md)
+		.item
+			a
+				border-bottom: 0
+				+pad(0)
+			+ .item
+				a
+					border: 0
+			.title
+				height: 40px
+			.content
+				height: 60px
+		.bottom-news
+			.item
+				a
+					padding-top: 0
+		.top-news
+			padding-bottom: 2rem
+			border-bottom: 1px solid lighten(color-get($mau,text-2), 30%)
+	+media-breakpoint-up(lg)
+		.sale
+			padding-top: 0
+			.item
+				+ .item
+					margin-top: 10px

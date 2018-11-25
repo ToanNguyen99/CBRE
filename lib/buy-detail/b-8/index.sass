@@ -1,0 +1,120 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-details
+	.detail-8
+		padding-top: 2rem
+		+media-breakpoint-up(lg)
+			padding-top: 0
+		.row
+			+mar(null 0)
+			.col-6
+				+pad(null 5px)
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0
+				+media-breakpoint-up(lg)
+					+pad(0)
+		.content
+			padding-top: 1.5rem
+			h2
+				margin: 0
+			.manager
+				background: url('../img/cbre/form_bg.png')
+				position: relative
+				z-index: 0
+				&:after
+					content: ''
+					+pos(abs, 5px 5px 5px 5px)
+					background: color-get($mau,trang)
+					z-index: -1
+			.item
+				&:first-child
+					&:after
+						content: ''
+						width: 80%
+						height: 2px
+						+pos(abs, null null 0 50%)
+						transform: translateX(-50%)
+						background: #ebebeb
+				+pad(0)
+				figure
+					margin-bottom: 0
+					height: 100%
+					
+					position: relative
+					
+					+pad(1.2rem)
+					
+					figcaption
+						text-align: center
+						margin-top: 1.5rem
+						.position
+							margin-bottom: .5rem
+						.name
+							+fz(1.2rem)
+							+fw(700)
+							color: color-get($mau,main)
+							margin-bottom: 0
+						.btn-list
+							.nav-item
+								.nav-link
+									+fz(1.8rem)
+									+pad(0)
+								+ .nav-item
+									margin-left: 1.5rem
+				+media-breakpoint-up(sm)
+					&:first-child
+						padding-right: 5px
+					&:last-child
+						padding-left: 5px
+					+ .item
+						margin-top: 0
+					figure
+						+pad(2rem 3rem)
+						figcaption
+							text-align: initial
+				+media-breakpoint-up(lg)
+					figure
+				+media-breakpoint-up(xl)
+					figure
+						figcaption
+							margin-top: 1rem
+		.nav-utility
+			margin-top: 2rem
+			background: color-get($mau,main)
+			+pad(1.5rem null)
+			
+			.item
+				align-self: center
+				position: relative
+				
+				a
+					text-decoration: none
+					color: color-get($mau,trang)
+					figure
+						margin-bottom: 0
+						text-align: center
+						.icon
+							height: 35px
+							em
+								+fz(1.5rem)
+							img
+								filter: brightness(0) invert(1)
+				+ .item
+					&:before
+						content: ''
+						height: 100%
+						width: 1px
+						background: color-get($mau,trang)
+						+pos(abs, 0 null null 0)
+				&:hover
+					a
+						figure
+							color: color-get($mau,extra)
+							.icon
+								
+								img
+									filter: initial

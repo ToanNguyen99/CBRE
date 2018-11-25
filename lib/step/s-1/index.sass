@@ -1,0 +1,28 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-step-1
+	+pad(3rem null 1rem)
+	.item
+		margin-bottom: 2rem
+		text-align: center
+		.text
+			margin-top: 1.5rem
+			.title
+				+fz(1.2rem)
+				+fw(700)
+				color: color-get($mau,text-1)
+				text-transform: uppercase
+				margin-bottom: 1rem
+			p
+				margin-bottom: 0
+				color: color-get($mau, text-5)
+	+media-breakpoint-up(sm)
+		.item
+			text-align: left
+			.text
+				margin-top: 0
+				p
+					text-align: left

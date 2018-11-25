@@ -1,0 +1,149 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-buy-list-1
+	+pad(2rem null)
+	.show
+		margin-top: 0
+	.buy-list
+		.form-group
+			margin-bottom: .5rem
+			input
+				+pad(0.375rem 1.75rem 0.375rem 1.29rem)
+				+placeholder()
+					+fz(.93rem)
+					+fw(400)
+					font-style: italic
+			button
+				border: none
+				color: color-get($mau,trang)
+				text-transform: uppercase
+				background-image: -moz-linear-gradient( 0deg, rgb(105,190,40) 0%, rgb(0,106,77) 100%)
+				background-image: -webkit-linear-gradient( 0deg, rgb(105,190,40) 0%, rgb(0,106,77) 100%)
+				background-image: -ms-linear-gradient( 0deg, rgb(105,190,40) 0%, rgb(0,106,77) 100%)
+				+fz(1.2rem)
+				i
+					margin-left: 1rem
+		.buy-select
+			padding-top: 0
+			margin-bottom: 1rem
+			background: #f7f7f7
+			+box-sha(inset 0 0 0 1px #cccccc)
+			input , .custom-select
+				height: 50px
+				+lh(50px)
+			.buy-input
+				+pad(1.3rem 1rem)
+			.buy-nav
+				.nav-item
+					width: 50%
+					.nav-link
+						text-transform: uppercase
+						text-align: center
+						+fw(700)
+						color: #333333
+						background: #d1d1d1
+						&.active
+							background: none
+							color: color-get($mau,main)
+							position: relative
+							&:before
+								content: ''
+								display: block
+								+pos(abs , null null 5px 50%)
+								+transform(translateX(-50%))
+								width: 0
+								height: 0
+								border-style: solid
+								border-width: 4px 5px 0 5px
+								border-color: color-get($mau,main) transparent transparent transparent
+	.buy-right
+		a
+			text-decoration: none
+		.buy-input
+			margin-bottom: 2rem
+			label
+				+fz(1rem)
+				+fw(400)
+				margin-bottom: 1rem
+				color: #858585
+			.form-group
+				margin-bottom: 0
+				display: flex
+				align-items: center
+				justify-content: space-between
+				.select
+					width: calc(100%/2 - 5px)!important
+					select
+						border: 1px solid lighten(color-get($mau,text-2),30%)
+				+media-breakpoint-up(lg)
+					.select
+						width: 200px!important
+						select
+							+pad(.3rem null)
+						+ .select
+							margin-left: 1rem
+	.form-group
+		display: flex
+		align-items: center
+		.select
+			width: 100%
+			select
+				border: 1px solid lighten(color-get($mau,text-2),30%)
+	.item
+		figure
+			figcaption
+				.address
+					margin-bottom: 0
+				.info
+					margin-bottom: 0
+					.nav-item
+						position: relative
+						+ .nav-item
+							&:before
+								content: ''
+								background: lighten(color-get($mau,text-2),30%)
+								width: 1px
+								height: 12px
+								+pos(abs, 50% null null 0)
+								display: block!important
+								transform: translateY(-50%)
+	+media-breakpoint-down(md)
+		.buy-list
+			.buy-banner
+				.col-6
+					&:nth-child(1)
+						padding-right: 5px
+					&:nth-child(2)
+						padding-left: 5px
+		.buy-right
+			.item
+				&:nth-child(2n)
+					padding-right: 5px
+				&:nth-child(2n - 1)
+					padding-left: 5px
+	+media-breakpoint-up(md)
+		.buy-list
+			.buy-select
+				.buy-nav
+					.nav-link
+						padding-right: 5rem
+						padding-left: 5rem
+	+media-breakpoint-up(lg)
+		.buy-list
+			.buy-select
+				padding-top: 0
+				.buy-nav
+					.nav-link
+						padding-right: 2.5rem
+						padding-left: 2.5rem
+		.buy-right
+			.buy-input
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				label
+					+fz(.9rem)
+					margin-right: 1rem
+					margin-bottom: 0

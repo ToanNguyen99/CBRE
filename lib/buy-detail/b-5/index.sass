@@ -1,0 +1,25 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-details
+	.detail-5
+		padding-top: 2rem
+		.top-content
+			padding-top: 1.5rem
+			.logo
+				float: left
+				margin-right: 1rem
+				+pad(3rem)
+				display: inline-block
+				background: url('../img/cbre/form_bg.png')
+				position: relative
+				z-index: -2
+				&:after
+					content: ''
+					+pos(abs, 5px 5px 5px 5px)
+					background: color-get($mau,trang)
+					z-index: -1
+		+media-breakpoint-up(lg)
+			.top-content
+				margin-bottom: 1rem

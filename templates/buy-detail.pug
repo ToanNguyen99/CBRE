@@ -1,0 +1,29 @@
+extends _layout/layout.pug
+block variables
+	- var title = "buy-details"
+	- var description = "Description for buydetail page"
+	- var bodyclass = "buy-detailspage"
+	- var href = "/buy-details.html"
+block header
+	include ../lib/header/h-4/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	section.canhcam-details
+		.container
+			h1.cbre-title Lancaster Lincoln - căn hộ a10
+			.row
+				.col-lg-8
+					include ../lib/buy-detail/b-1/index.pug
+					include ../lib/buy-detail/b-2/index.pug
+					include ../lib/buy-detail/b-3/index.pug
+					include ../lib/buy-detail/b-4/index.pug
+					include ../lib/buy-detail/b-5/index.pug
+					include ../lib/buy-detail/b-6/index.pug
+					include ../lib/buy-detail/b-7/index.pug
+					#contact
+				.col-lg-4
+					include ../lib/buy-detail/b-8/index.pug
+	include ../lib/buy-detail/b-9/index.pug
+
+block footer
+	include ../lib/footer/f-11/index.pug

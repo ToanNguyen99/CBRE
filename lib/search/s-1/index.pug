@@ -1,0 +1,206 @@
+section.canhcam-search-1
+	.container
+		.search-form
+			ul#ccTabs.nav.nav-tabs(role="tablist")
+				li.nav-item
+					a#cct-01-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") Bán
+				li.nav-item
+					a#cct-02-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Thuê
+					
+			#ccTabsContent.tab-content
+				#cct-01.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-01-tab")
+					.search-table
+						.row
+							.col-ll-6.col
+								.form-group
+									input.form-control(type="text" placeholder='Vui lòng nhập tên dự án/ địa chỉ...' data-mh='input-2')
+							.col-lg
+								.form-group
+									.select(data-mh='input-2')
+										select.form-control
+											option Danh mục BĐS
+											option long
+							.col-lg(k-menu-map-to='#button')
+								.form-group
+									button.btn.btn-primary(type='button' data-mh='input-2')
+										| tìm kiếm
+										em.fas.fa-search.ml-2
+						.row
+							.col-ll-8
+								.row
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Loại dự án
+													option long
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Vị trí
+													option long
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Giá
+													option long
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Phòng ngủ
+													option long
+							#button.w-100
+				#cct-02.tab-pane.fade(role="tabpanel" aria-labelledby="cct-02-tab")
+					.search-table
+						.row
+							.col-ll-6.col
+								.form-group
+									input.form-control(type="text" placeholder='Vui lòng nhập tên dự án/ địa chỉ...' data-mh='input-2')
+							.col-lg
+								.form-group
+									.select(data-mh='input-2')
+										select.form-control
+											option Danh mục BĐS
+											option long
+							.col-lg(k-menu-map-to='#button-2')
+								.form-group
+									button.btn.btn-primary(type='button' data-mh='input-2')
+										| tìm kiếm
+										em.fas.fa-search.ml-2
+						.row
+							.col-ll-8
+								.row
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Loại dự án
+													option long
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Vị trí
+													option long
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Giá
+													option long
+									.col-lg
+										.form-group
+											.select(data-mh='input-2')
+												select.form-control
+													option Phòng ngủ
+													option long
+							#button-2.w-100
+		.list-items
+			.result
+				h3.text-uppercase Kết quả tìm kiếm:
+				ul.nav.nav-list
+					li.nav-item
+						p.mb-0 Danh mục BĐS: 
+							span BĐS sang trọng
+							
+					li.nav-item
+						p.mb-0 Loại dự án: 
+							span Dự án mới
+					li.nav-item
+						p.mb-0 Vị trí: 
+							span Quận 7
+			.row.no-gutters
+				.col-sm-6.col-lg-4.item
+					a(href="")
+						figure
+							.box-zoom
+								img.w-100(src='./img/cbre/home/home_2.png')
+								.detail.d-none Xem chi tiết
+							figcaption
+								h5.name De La Sol
+								p.address Quận 2, TP. HCM
+								ul.nav.info
+									li.nav-item Căn hộ
+									li.nav-item 100m
+										sup 2
+									li.nav-item Đã hoàn thành/Cho thuê
+							.price Từ 1.5 tỷ VNĐ / căn
+							
+				.col-sm-6.col-lg-4.item
+					a(href="")
+						figure
+							.box-zoom
+								img.w-100(src='./img/cbre/home/home_2.png')
+								.detail.d-none Xem chi tiết
+							figcaption
+								h5.name De La Sol
+								p.address Quận 2, TP. HCM
+								ul.nav.info
+									li.nav-item Căn hộ
+									li.nav-item 100m
+										sup 2
+									li.nav-item Đã hoàn thành/Cho thuê
+							.price Từ 1.5 tỷ VNĐ / căn
+				.col-sm-6.col-lg-4.item
+					a(href="")
+						figure
+							.box-zoom
+								img.w-100(src='./img/cbre/home/home_2.png')
+								.detail.d-none Xem chi tiết
+							figcaption
+								h5.name De La Sol
+								p.address Quận 2, TP. HCM
+								ul.nav.info
+									li.nav-item Căn hộ
+									li.nav-item 100m
+										sup 2
+									li.nav-item Đã hoàn thành/Cho thuê
+							.price Từ 1.5 tỷ VNĐ / căn
+				.col-sm-6.col-lg-4.item
+					a(href="")
+						figure
+							.box-zoom
+								img.w-100(src='./img/cbre/home/home_2.png')
+								.detail.d-none Xem chi tiết
+							figcaption
+								h5.name De La Sol
+								p.address Quận 2, TP. HCM
+								ul.nav.info
+									li.nav-item Căn hộ
+									li.nav-item 100m
+										sup 2
+									li.nav-item Đã hoàn thành/Cho thuê
+							.price Từ 1.5 tỷ VNĐ / căn
+				.col-sm-6.col-lg-4.item
+					a(href="")
+						figure
+							.box-zoom
+								img.w-100(src='./img/cbre/home/home_2.png')
+								.detail.d-none Xem chi tiết
+							figcaption
+								h5.name De La Sol
+								p.address Quận 2, TP. HCM
+								ul.nav.info
+									li.nav-item Căn hộ
+									li.nav-item 100m
+										sup 2
+									li.nav-item Đã hoàn thành/Cho thuê
+							.price Từ 1.5 tỷ VNĐ / căn
+				.col-sm-6.col-lg-4.item
+					a(href="")
+						figure
+							.box-zoom
+								img.w-100(src='./img/cbre/home/home_2.png')
+								.detail.d-none Xem chi tiết
+							figcaption
+								h5.name De La Sol
+								p.address Quận 2, TP. HCM
+								ul.nav.info
+									li.nav-item Căn hộ
+									li.nav-item 100m
+										sup 2
+									li.nav-item Đã hoàn thành/Cho thuê
+							.price Từ 1.5 tỷ VNĐ / căn

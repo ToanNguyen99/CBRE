@@ -1,0 +1,51 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-details
+	.detail-4
+		padding-top: 2rem
+		.wrap-item
+			padding-top: 1.5rem
+		.item
+			background: #f7f7f7
+			+box-sha(inset 1px -1px 0 0 color-get($mau,trang))
+			display: flex
+			justify-content: center
+			align-items: center
+			+pad(1rem null)
+			figure
+				text-align: center
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				margin-bottom: 0
+				.boxzoom
+					width: 90px
+					height: 90px
+					+bor-rad(50%)
+				figcaption
+					h4
+						margin-bottom: 0
+						margin-top: 1.2rem
+						+fz(1.1rem)
+						color: #666666
+						+fw(400)
+		+media-breakpoint-up(lg)
+			.item
+				+transition(all .3s ease-in-out)
+				figure
+					.boxzoom
+						+transition(all .3s ease-in-out)
+						img
+							+transition(all .3s ease-in-out)
+				&:hover,&.active
+					background: color-get($mau,trang)
+					+box-sha(inset 0 -2px 0 0 color-get($mau,extra))
+					figure
+						.boxzoom
+							background: color-get($mau,extra)
+							img
+								filter: brightness(0) invert(1)
+						figcaption

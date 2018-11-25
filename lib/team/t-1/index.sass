@@ -1,0 +1,31 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-team-1
+	+pad(3rem null 1rem)
+	.item
+		margin-bottom: 2rem
+		.info
+			+pad(1.5rem)
+			height: 100%
+			background: #f7f7f7
+			.name
+				+fz(1.2rem)
+				+fw(700)
+				margin-bottom: .6rem
+				color: color-get($mau, main)
+			.position
+				color: color-get($mau, text-1)
+				margin-bottom: .5rem
+				p
+					margin-bottom: 0
+			span
+				color: color-get($mau,text-2)
+	+media-breakpoint-up(sm)
+		.item
+			.info
+				display: flex
+				flex-direction: column
+				justify-content: center

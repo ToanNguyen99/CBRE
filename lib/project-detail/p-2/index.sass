@@ -1,0 +1,48 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.project-detail-1
+	padding-top: 1.5rem
+	+media-breakpoint-up(lg)
+		margin-top: 1rem
+	.buy-title
+		margin-bottom: 1.5rem
+	.item
+		min-height: 300px
+	.owl-dots
+		.owl-dot
+			&.active
+				span
+					background: color-get($mau,main)
+	+media-breakpoint-up(lg)
+		.item
+			min-height: 400px
+	+media-breakpoint-up(lg)
+		.item
+			min-height: 490px
+		.owl-nav
+			button
+				&.owl-prev,&.owl-next
+					width: 2.14rem
+					height: 2.14rem
+					
+					text-align: center
+					+fz(1.29rem)
+					background: color-get($mau,trang)
+					color: color-get($mau,main)
+					+transition(all .3s ease-in-out)
+					position: absolute
+					top: 50%
+					+transform(translateY(-50%))
+					+bor-rad(0)
+					+mar(0)
+					span
+						+lh(2.14rem)
+					&:hover
+						background: color-get($mau,main)
+						color: color-get($mau,trang)
+				&.owl-prev
+					left: 0
+				&.owl-next
+					right: 0

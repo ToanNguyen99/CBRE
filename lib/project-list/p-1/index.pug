@@ -1,0 +1,194 @@
+section.canhcam-project-list-1
+	.container
+		
+		.row
+			.col-md-4
+				.search
+					.form-group
+						input.form-control(type="text" placeholder='Vui lòng nhập tên dự án/ địa chỉ...' )
+						button.btn.btn-primary(type='button' )
+							em.fas.fa-search
+		.row
+			.col
+				#project-number
+		.project
+			.list-items
+				//- thêm class mflex hoặc không
+				.row.no-gutters
+					.col
+						.category.d-none.d-lg-block
+							.category-nav
+								.select-list.d-flex
+									.form-group
+										.select
+											select
+												option Danh mục BĐS
+									.form-group
+										.select
+											select
+												option Loại dự án
+									.form-group
+										.select
+											select
+												option Vị trí
+								.list-style
+									ul.nav
+										li.nav-item.list-1
+											img.img-fluid(src="./img/cbre/project/project_icon_1.png", alt="")
+										li.nav-item.active.list-2
+											img.img-fluid(src="./img/cbre/project/project_icon_2.png", alt="")
+									.showmap
+										em.lnr.lnr-chevron-left
+							.project-nav
+								.project-number(k-menu-map-to='#project-number')
+									p Dự án tại Hồ Chí Minh
+										span  200 dự án
+								.sort.d-flex
+									p Sắp xếp theo
+									.form-group
+										.select
+											select
+												option Mới nhất
+				.row.project-list.no-gutters
+					.project-style.d-lg-none
+						ul.nav
+							li.nav-item
+								a.nav-link.mfilter(href="javascript:void(0)")
+									img(src="./img/cbre/project/project_filter.png", alt="")
+									span.ml-2 Bộ loc
+							li.nav-item
+								a.nav-link.mmap(href="javascript:void(0)")
+									img(src="./img/cbre/project/project_map.png", alt="")
+									span.ml-2 Bản đồ
+					- for(i=0; i<30; i ++)
+						.col-mod.col-12.box
+							a(href="#").item
+								figure
+									.img(bg-img='./img/cbre/project/project_1.png')
+										img.w-100.d-none-d-xl-block(src="./img/cbre/project/project_1.png", alt="")
+										.detail Xem chi tiết
+									figcaption
+										h5.project-name D' EDGE THẢO ĐIỀN
+										.project-info
+											p Quận 10, TP. HCM
+											p Đã hoàn thành / Đang bán
+									.mflex-content.d-lg-none
+										h5.name Sunwah Pearl
+										p.address Quận 10, TP. HCM
+										.detail
+											ul.nav
+												li.nav-item Căn hộ
+												li.nav-item Đã hoàn thành
+											ul.nav
+												li.nav-item
+													span Sunwah Group
+												li.nav-item Đang bán
+											.price.text-right
+												p.mb-0 Từ 1.5 tỷ VNĐ / căn
+									.info.justify-content-between.w-100
+										.info-detail
+											h5.name Sunwah Pearl
+											ul.nav
+												li.nav-item Quận 10, TP. HCM
+												li.nav-item Loại dự án: Căn hộ
+												li.nav-item Số căn:  1.500 căn
+												li.nav-item Diện tích: 50m2 - 150m2
+												li.nav-item Hoàn thành:  Đã hoàn thành
+										.info-price
+											.item
+												p Chủ đầu tư
+												b Sunwah Group
+											.item
+												p Đang bán
+												b.price Từ 1.5 tỷ VNĐ / căn
+			.map
+				iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.64296934296!2d106.704975!3d10.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4123a38e10c2885!2zUFZPSUwgVOG7lE5HIEPDlE5HIFRZIEThuqZVIFZJ4buGVCBOQU0!5e0!3m2!1svi!2sus!4v1536653990846" width="100%" height="700" frameborder="0" style="border:0;")
+				.hidemap
+					em.lnr.lnr-chevron-right
+	.map-mobile
+		.map-title
+			p.mb-0 Bản đồ
+			.close
+				em.lnr.lnr-cross
+		iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.64296934296!2d106.704975!3d10.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4123a38e10c2885!2zUFZPSUwgVOG7lE5HIEPDlE5HIFRZIEThuqZVIFZJ4buGVCBOQU0!5e0!3m2!1svi!2sus!4v1536653990846" width="100%" height="100%" frameborder="0" style="border:0;")
+	.filter-mobile
+		.filter-title
+			p.mb-0 Bộ lọc
+			.close
+				em.lnr.lnr-cross
+			.clearcheck
+				p.mb-0 Reset bộ lọc
+		.filter-content
+			.container-fluid
+				.filter-item
+					.row
+						.col
+							h5 Danh mục bất động sản
+					.row
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+				.filter-item
+					.row
+						.col
+							h5 Danh mục bất động sản
+					.row
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+						.col-sm-6
+							.form-filter
+								input(type="checkbox")
+								label Luxury Categories
+				.filter-item
+					.row
+						.col
+							h5 Vị trí dự án
+					.row
+						.col
+							.form-filter
+								.select
+									select
+										option Chọn vị trí
+				.filter-item
+					.row
+						.col
+							h5 Sắp xếp theo
+					.row
+						.col
+							.form-filter
+								.select
+									select
+										option Chọn vị trí
+				.filter-item
+					button.text-uppercase(type='submit') áp dụng

@@ -1,0 +1,35 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-details
+	.detail-7
+		padding-top: 2rem
+		.content
+			padding-top: 1.5rem
+			.calculator
+				.item
+					.form-group
+						.form-control
+							+bor-rad(5px)
+							background: #f7f7f7
+							border: 0
+							pointer-events: none
+							&::placeholder
+								text-align: right
+					+ .item
+						margin-top: .8rem
+					.detail
+						text-align: right
+						p
+							padding-right: 1rem
+					&.active
+						.detail
+							color: color-get($mau,main)
+							+fw(700)
+			.img
+				+pad(1rem 5rem)
+		+media-breakpoint-up(lg)
+			.content
+				.img
+					+pad(0)

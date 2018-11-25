@@ -1,0 +1,57 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-contact-1
+	+pad(3rem null)
+	.contact
+		figure
+			height: 100%
+			margin-bottom: 0
+			background: color-get($mau,bg-6)
+			figcaption
+				+pad(1.5rem 2rem)
+				.info
+					margin-top: 1rem
+					p
+						margin-bottom: 0
+	.contact-form
+		margin-top: 2rem
+		.form
+			margin-top: 2rem
+			.form-group
+				height: auto
+				margin-bottom: 1.5rem
+				input,textarea
+					background: color-get($mau, bg-5)
+					border: 1px solid color-get($mau, bor)
+					+bor-rad(5px)
+					&::placeholder
+						color: color-get($mau, text-2)
+						+fz(1rem)
+				textarea
+					max-height: 180px
+		.btn-send
+			background: color-get($mau,main)
+			color: color-get($mau,trang)
+			+pad(.6rem 2rem)
+			text-transform: uppercase
+			border-radius: 0
+		.important
+			margin: 1.5rem 0
+			color: color-get($mau,text-2)
+			margin-bottom: 0
+	+media-breakpoint-up(lg)
+		.contact
+			figure
+				figcaption
+					.info
+						p
+							+fz(r(15px))
+		.contact-form
+			margin-top: 0
+			.note, .important
+				+fz(r(15px))
+			.important
+				margin-bottom: 1.5rem

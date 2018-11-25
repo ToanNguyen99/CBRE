@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "rent-list"
+	- var description = "Description for rent-list page"
+	- var bodyclass = "rent-list"
+	- var href = "/rent-list.html"
+block header
+	include ../lib/header/h-4/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/step/s-1/index.pug
+	include ../lib/step/s-2/index.pug
+block footer
+	include ../lib/footer/f-11/index.pug

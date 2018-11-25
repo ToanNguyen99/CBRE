@@ -1,0 +1,34 @@
+header.canhcam-header-4
+	.hidden
+	nav.navbar.navbar-expand-lg.container
+		a.navbar-brand(href='#')
+			img(src="./img/cbre/logo.png", alt="Logo")
+		#phone
+		button.navbar-toggler.ml-3(type='button', data-toggle='collapse', data-target='#CCMenuHeader', aria-controls='CCMenuHeader', aria-expanded='false', aria-label='Toggle navigation')
+			span.fa.fa-bars
+		#CCMenuHeader.collapse.navbar-collapse
+			ul.navbar-nav.ml-auto.mt-2.mt-lg-0.menu
+				li.nav-item.active
+					a.nav-link(href='#') Dự án
+				li.nav-item
+					a.nav-link(href='buy.html') Mua
+				li.nav-item
+					a.nav-link(href='#') Thuê
+				li.nav-item
+					a.nav-link(href='#') Tin tức
+			.phone(k-menu-map-to='#phone')
+				a.btn.btn-link.btn-phone(href="#")
+					em.mdi.mdi-phone
+				span.ml-3.d-none.d-lg-inline-block 0919 686 737
+			.user
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link(href='#') Đăng ký
+					li.nav-item
+						a.nav-link(href='#') Đăng nhập
+			.language
+				ul.nav
+					li.nav-item.active
+						a.nav-link(href='#') VN
+					li.nav-item
+						a.nav-link(href='#') EN

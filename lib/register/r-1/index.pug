@@ -1,0 +1,82 @@
+section.canhcam-form-1
+	.container
+		
+		.form
+			h1.cbre-title.text-center  Đăng ký
+			.other-login.mb-4.d-none.d-lg-block
+				a(href="#").item.fb
+					.icon
+						em.fab.fa-facebook-f
+					.login
+						p.mb-0 Đăng ký bằng Facebook
+				a(href="#").item.gg
+					.icon
+						em.fab.fa-google-plus-g
+					.login
+						p.mb-0 Đăng ký bằng Google
+				p.mb-0.text-center.mt-4 Hoặc
+			.form-login
+				.row.item
+					.col-lg-3
+						label Nhập email/số điện thoại *
+					.col-lg-9
+						.form-group
+							input.form-control(type="text")
+				.row.item
+					.col-lg-3
+						label Nhập mật khẩu *
+					.col-lg-9
+						.form-group
+							input.form-control(type="password")
+				.row.item
+					.col-lg-3
+						label Nhập lại mật khẩu *
+					.col-lg-9
+						.form-group
+							input.form-control(type="password")
+				.pc.d-lg-none
+					.row.item
+						.col-lg-3
+							label Họ tên *
+						.col-lg-9
+							.form-group
+								input.form-control(type="text")
+					.row.item
+						.col-lg-3
+							label Email *
+						.col-lg-9
+							.form-group
+								input.form-control(type="text")
+					.row.item
+						.col-lg-3
+							label Điện thoại di động *
+						.col-lg-9
+							.form-group
+								input.form-control(type="text")
+				.row.item.captcha.mt-3
+					.col-lg-3
+						label Mã xác nhận *
+					.col-lg-9
+						img.img-fluid(src="./img/cbre/capcha.png", alt="")
+				.row.item
+					.col-lg-9.offset-lg-3
+						.mobile.d-none.d-lg-flex
+							.form-checkbox
+								input(type='checkbox')
+								label Đã đọc và đồng ý 
+									a(href="#") điều khoản sử dụng 
+									| của CBRE
+						.pc.d-lg-none
+							.form-checkbox
+								input(type='checkbox')
+								label Đồng ý với điều khoản dành cho đói tác
+							.form-checkbox
+								input(type='checkbox')
+								label Đồng ý đăng ký nhận thông tin từ CBRE
+							p.mb-0.mt-3 Khi đăng ký tài khoản là bạn đã đồng ý với chính sách bảo mật, điều khoản của An Tường Real và nhận tài liệu hướng dẫn qua email đã đăng ký
+				.row.item
+					.col-lg-9.offset-lg-3
+						.button
+							button.text-uppercase(type='submit') đăng ký
+							p.mb-0 Đã có tài khoản? 
+								a(href="#") Đăng nhập

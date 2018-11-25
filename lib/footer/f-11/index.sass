@@ -1,0 +1,137 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-11
+	+pad(2rem null)
+	background-color: color-get($mau,main)
+	position: relative
+	z-index: 1
+	color: color-get($mau, trang)
+	overflow: hidden
+	.linkinfo
+		padding-bottom: .5rem
+		border-bottom: 1px solid color-rgba(color-get($mau,extra),.2)
+		.item
+			margin-bottom: 1rem
+			.text, .icon
+				+fz(1.3rem)
+				h5
+					padding-top: 2px
+					+fz(1.3rem)
+					text-transform: uppercase
+				p
+					+fz(.95rem)
+					margin-bottom: 0
+					color: color-get($mau,extra)
+					&.phone
+						+fz(1.3rem)
+						+fw(700)
+	.linkfooter
+		border-bottom: 1px solid color-rgba(color-get($mau,extra),.2)
+		padding-top: 2.5rem
+		+fw(400)
+		+fz(1.1rem)
+		.title,.logo
+			display: flex
+			align-items: flex-end
+			margin-bottom: 1.5rem
+			height: 2rem
+			+fz(1.4rem)
+			text-transform: uppercase
+		.item
+			margin-bottom: 2rem
+			.list-group
+				.list-group-item
+					display: inline-block
+					+bg(none, none, none)
+					border: 0
+					+pad(.4rem 0)
+					+media-breakpoint-up(md)
+						+pad(.15rem 0)
+					a
+						+link(darken(color-get($mau,trang),0%),color-get($mau,extra),color-get($mau,extra))
+					&:first-child
+						padding-top: 0
+			.location
+				p 
+					+mar(0)
+
+		.social
+			margin-top: 1rem
+			ul
+				a
+					width: 40px
+					+bor-rad(50%)
+					height: 40px
+					border: 2px solid color-get($mau,trang)
+					display: flex
+					align-items: center
+					justify-content: center
+					i
+						color: color-get($mau,trang)
+						+fz(1.5rem)
+	.nav-bottom
+		padding-top: 2rem
+		+fz(1.1rem)
+		color: color-get($mau,trang)
+		.nav
+			justify-content: center
+			.nav-item
+				position: relative
+				.nav-link
+					+pad(0 null)
+					color: color-rgba(color-get($mau,trang),1)
+				&:after
+					content: ''
+					height: 13px
+					width: 1px
+					background: color-get($mau,trang)
+					+pos(abs, 50% 0 null null)
+					transform: translateY(-50%)
+				&:last-child
+					&:after
+						display: none
+		p
+			text-align: center
+	+media-breakpoint-up(sm)
+		.linkfooter
+			.title,.logo
+				height: 3rem
+	+media-breakpoint-up(lg)
+		.linkinfo
+			.item
+				.icon
+					em
+						+fz(1rem)
+				.text
+					h5
+						padding-top: .4rem
+						+fz(1.2rem)
+		.linkfooter
+			.title,.logo
+				height: 2rem
+				+fz(1.2rem)
+			+fz(1rem)
+			.social
+				ul
+					a
+						text-decoration: none
+						&:hover
+							background: color-get($mau,extra)
+		.nav-bottom
+			+fz(.95rem)
+			.nav
+				justify-content: flex-start
+				.nav-item
+					.nav-link
+						color: color-rgba(color-get($mau,trang),.5)
+					&:first-child
+						.nav-link
+							
+							padding-left: 0
+			.copyright
+				p
+					text-align: right
+					color: color-rgba(color-get($mau,trang),.5)

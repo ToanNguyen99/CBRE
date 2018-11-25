@@ -1,0 +1,141 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-search-1
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.show
+		margin-top: 0
+	.search-form
+		border: 2px solid lighten(color-get($mau,text-2), 20%)
+		.nav-tabs
+			border-bottom: 0
+			.nav-item
+				width: 50%
+				.nav-link
+					text-align: center
+					position: relative
+					background: color-get($mau,main)
+					color: darken(color-get($mau,trang),0%)
+					border: 0
+					border-bottom: 0
+					+bor-rad(0)
+					text-transform: uppercase
+					+fw(700)
+					+fz(1rem)
+					+pad(.8rem 3rem)
+					&.active
+						background: color-get($mau,bg-7)
+						color: darken(color-get($mau,main),0%)
+						&:after
+							content: '\f35d'
+							color: color-get($mau, main)
+							font: normal normal normal 24px/1 "Material Design Icons"
+							display: block
+							+pos(abs, null null -5px 50%)
+							transform: translateX(-50%)
+		+media-breakpoint-up(lg)
+			border: 0
+			.nav-tabs
+				.nav-item
+					width: auto
+		.tab-content
+			border: 0
+			background: color-get($mau,bg-7)
+			.tab-pane
+				+pad(1rem null 2rem)
+				.search-table
+					.row
+						+mar(null 0)
+						+ .row
+							.form-group
+								margin-bottom: 0
+						.form-group
+							height: auto
+							margin-top: 1rem
+							margin-bottom: 0
+							+media-breakpoint-up(lg)
+								margin-top: 0
+							input, button,select
+								width: 100%
+								min-height: 45px
+								border-radius: 0
+								border: 1px solid color-get($mau, main)
+								color: color-get($mau,text-3)
+								+pad(.8rem null)
+
+								&:focus
+									border-color: color-get($mau,extra)
+									outline: 0
+									box-shadow: none
+								&::placeholder
+									color: color-get($mau,text-3)
+									+fz(.85rem)
+									font-style: italic
+								+media-breakpoint-up(lg)
+									height: 100%
+							button
+								color: color-get($mau,trang)
+								text-transform: uppercase
+								+fz(1.1rem)
+							.select
+								position: relative
+								select
+									-moz-appearance: none
+									-webkit-appearance: none
+									appearance: none
+								&:after
+									content: '\f140'
+									+pos(abs, 50% 1rem null null)
+									transform: translateY(-50%)
+									font: normal normal normal 24px/1 "Material Design Icons"
+									color: color-get($mau,main)
+									pointer-events: none
+						.col-ll-8
+							width: 100%
+				+media-breakpoint-up(lg)
+					+pad(1.5rem)
+					.search-table
+						+pad(0)
+						.row
+							.col-ll-6
+								flex: 0 0 60%
+								max-width: 60%
+							.col-ll-8
+								flex: 0 0 80%
+								max-width: 80%
+								margin-top: 10px
+							.col-lg,.col-ll-6
+								+pad(null 5px)
+	.list-items
+		margin-top: 2rem
+		
+		color: color-get($mau,text-3)
+		.result
+			padding-bottom: .5rem
+			border-bottom: 1px solid lighten(color-get($mau,text-2),30%)
+			margin-bottom: 2rem
+			h3
+				+fz(1.3rem)
+				+fw(700)
+				margin-bottom: .75rem
+				color: color-get($mau,main)
+			.nav-list
+				flex-direction: column
+				.nav-item
+					p
+						span
+							color: color-get($mau,main)
+		+media-breakpoint-up(sm)
+			.result
+				.nav-list
+					flex-direction: initial
+					.nav-item
+						+ .nav-item
+							margin-left: 1.5rem
+		+media-breakpoint-up(lg)
+			.no-gutters
+				+mar(null -15px)

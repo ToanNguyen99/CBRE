@@ -1,0 +1,13 @@
+article.detail-4
+	.buy-title
+		img(src="./img/cbre/buy_detail/title_icon_3.png", alt="")
+		h2 Tiện ích căn hộ
+	.row.no-gutters.wrap-item
+		- var index = 1
+		each val , key in ['Máy lạnh','Khu vực BBQ','CCTV','Phòng tập gym','Sân vườn','Thư viện','Bãi đậu xe','Sân chơi','Bảo vệ','Hồ bơi','Sân tenis','Wifi']
+			.col-4.col-lg-3.item
+				figure
+					.boxzoom
+						img(src="./img/cbre/buy_detail/buy_icon_"+ index++ +".png", alt="alt")
+					figcaption
+						h4= val

@@ -1,0 +1,49 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-news-list-1
+	padding-top: 4rem
+	+media-breakpoint-up(lg)
+		margin-bottom: -2rem
+	.item
+		text-decoration: none
+		figure
+			display: flex
+			.img
+				flex: 0 0 50%
+			figcaption
+				padding-left: 1rem
+				time
+					color: color-get($mau,text-2)
+				.name
+					+fz(1.2rem)
+					+fw(700)
+					color: color-get($mau,text-1)
+					margin-bottom: .8rem
+					height: 40px
+					overflow: hidden
+				.desc
+					color: color-get($mau,text-3)
+					height: 60px
+					overflow: hidden
+				.more
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					+fz(1.1rem)
+					margin-top: 1.2rem
+					margin-bottom: 0
+					em
+						margin-left: .5rem
+	+media-breakpoint-up(lg)
+		.item
+			figure
+				margin-bottom: 30px
+				display: block
+				figcaption
+					+pad(1rem)
+					+bor(null, 1px solid, lighten(color-get($mau,text-2),30%))
+					.name
+						margin-top: .5rem

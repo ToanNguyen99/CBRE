@@ -1,0 +1,62 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-nav-1
+	padding-top: 2rem
+	+media-breakpoint-up(lg)
+		background: color-get($mau,bg-6)
+	.title
+		align-self: center
+		h5
+			text-transform: uppercase
+			+fz(1.3rem)
+			+fw(700)
+			color: color-get($mau,text-1)
+		p
+			color: color-get($mau,text-2)
+	.nav-right
+		.nav
+			.nav-item
+				max-width: 80px
+				flex: 0 0 12.5%
+				+pad(.75rem .5rem)
+				position: relative
+				&:after
+					content: ''
+					width: 1px
+					height: 100%
+					+pos(abs, 0 null null 0)
+					background: lighten(color-get($mau,text-3),40%)
+				&:last-child
+					&:before
+						content: ''
+						width: 1px
+						height: 100%
+						+pos(abs, 0 0 null null)
+						background: lighten(color-get($mau,text-3),40%)
+				.nav-link
+					+pad(0)
+					figure
+						color: color-get($mau,text-3)
+						margin-bottom: 0
+						text-align: center
+						.boxzoom
+							img
+								max-height: 24px
+								filter: invert(74%) sepia(12%) saturate(0%) hue-rotate(170deg) brightness(93%) contrast(86%)
+						figcaption
+							padding-top: .5rem
+							h4
+								margin-bottom: 0
+								+fz(.9rem)
+				&:hover, &.active
+					.nav-link
+						figure
+							.boxzoom
+								img
+									filter: initial
+							figcaption
+								color: color-get($mau,main)
+
